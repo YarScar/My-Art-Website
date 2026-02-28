@@ -1,0 +1,36 @@
+{
+  "name": "little-butterfly",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.2.29",
+    "pg": "^8.13.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12",
+    "@types/node": "^20",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.29",
+    "postcss": "^8",
+    "prisma": "^6.19.2",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "vitest": "^2.0.0"
+  }
+}
