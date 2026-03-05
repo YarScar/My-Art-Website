@@ -1,5 +1,6 @@
 // app/contact/page.tsx
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -122,7 +123,9 @@ export default function ContactPage() {
           </div>
 
           {/* Right — form */}
-          <ContactForm />
+          <Suspense fallback={<div className="glass rounded-3xl p-8 shadow-xl h-96 animate-pulse" />}>
+            <ContactForm />
+          </Suspense>
         </div>
       </section>
     </div>
